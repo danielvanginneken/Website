@@ -16,7 +16,7 @@ export const NOW = {
       items: [
         "Deepening my knowledge of .NET and C# for backend and API development.",
         "Getting more comfortable with TypeScript, React, and building complete applications end to end.",
-        "Building and running DentechSync in production at Dentech — a system connecting internal tools and automating operational workflows.",
+        "Carrying over what I learned building and running DentechSync in production at Dentech (until August 2026) — a system connecting internal tools and automating operational workflows.",
         "Learning to think more about architecture, maintainability, deployment, and reliability instead of only making features work.",
       ],
     },
