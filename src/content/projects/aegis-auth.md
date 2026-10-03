@@ -1,20 +1,21 @@
 ---
 title: Aegis.Auth
-summary: A reusable .NET authentication and authorization library focused on JWT, RBAC, and claims-based identity — security tooling built for developers rather than end users.
-status: Research and development
+summary: A modular .NET authentication library built around database-backed sessions and signed cookies — batteries-included auth in the style of BetterAuth, built for developers rather than end users.
+status: v0.1 — implemented and tested, not yet released on NuGet
 category: build
 order: 2
 technologies:
   - C#
   - .NET
-  - JWT Authentication
-  - Role-Based Access Control (RBAC)
+  - Session & Cookie Authentication
+  - OAuth 2.0 / OpenID Connect
   - Claims-Based Authorization
+  - Cryptography & Token Hashing
   - Security Best Practices
-  - NuGet Package Development
+  - Library & NuGet Package Design
 outcomes:
   - Identity and access management concepts
-  - Secure token handling and session architecture
+  - Secure session architecture and token hashing
   - Authorization architecture patterns
   - Reusable library design
   - Building software for other developers to consume
@@ -22,9 +23,12 @@ outcomes:
 
 ## What it is
 
-Aegis.Auth is a reusable authentication and authorization library for .NET
-applications. It aims to simplify identity management by providing common
-security functionality through a developer-friendly package.
+Aegis.Auth is a reusable authentication library for .NET applications. It
+simplifies identity management by providing common security functionality
+through a developer-friendly package: email/password sign-up and sign-in,
+database-backed sessions with HMAC-signed cookies, OAuth with account linking,
+email verification, password reset, CSRF protection and rate limiting — behind
+a native ASP.NET Core authentication handler.
 
 ## Why it was built
 
