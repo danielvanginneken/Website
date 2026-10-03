@@ -23,7 +23,7 @@ export const SITE = {
  * accounts. Order is not significant.
  */
 export const SOCIALS = {
-  github: 'https://github.com/DanielvG-IT',
+  github: 'https://github.com/danielvanginneken',
   linkedin: 'https://www.linkedin.com/in/danielvanginneken',
   youtube: 'https://www.youtube.com/@danielvanginneken',
 } as const;

@@ -16,7 +16,7 @@ continuously deployed site, so only the latest version is maintained.
 If you discover a security issue, please report it **privately** — do not open a
 public issue or pull request.
 
-- **Preferred:** [GitHub private vulnerability reporting](https://github.com/DanielvG-IT/Portfolio/security/advisories/new)
+- **Preferred:** [GitHub private vulnerability reporting](https://github.com/danielvanginneken/Portfolio/security/advisories/new)
 - **Email:** hello@danielvanginneken.nl
 
 Please include, where possible:
