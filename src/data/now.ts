@@ -7,9 +7,9 @@
  */
 
 export const NOW = {
-  updated: "2026-08-18",
+  updated: "2026-10-03",
   intro:
-    "HBO Informatica student at Avans Hogeschool, moving from an IT systems background deeper into software development and preparing for my upcoming internship with the IT/AI team at Basic-Fit.",
+    "HBO Informatica student at Avans Hogeschool, moving from an IT systems background deeper into software development, currently interning as a developer in a platform team at Basic-Fit.",
   sections: [
     {
       title: "Software development",
@@ -23,9 +23,9 @@ export const NOW = {
     {
       title: "Internship",
       items: [
-        "Preparing for my upcoming internship with the IT/AI team at Basic-Fit.",
-        "Getting ready to work in a professional software environment where code reviews, releases, collaboration, and real users matter.",
-        "Looking forward to learning how a larger organisation approaches software development and AI in practice.",
+        "Interning as a fullstack developer in a platform team at Basic-Fit, from August 2026 to January 2027.",
+        "Working in a professional software environment where code reviews, releases, collaboration, and real users matter.",
+        "Learning how a larger organisation approaches software development and AI in practice.",
       ],
     },
     {
