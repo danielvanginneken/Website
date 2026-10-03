@@ -31,6 +31,24 @@ export const SOCIALS = {
 /** Needs a matching mailbox on the Plesk origin before launch. */
 export const EMAIL = 'hello@danielvanginneken.com';
 
+/**
+ * Direct download of the latest CV, per site locale. CI in the profile repo
+ * gives the assets fixed names, so GitHub's `releases/latest/download/<name>`
+ * always serves the newest one — no site change per CV release.
+ * Deliberately not in SOCIALS: those become JSON-LD `sameAs` and get
+ * `rel="me"` — identity claims a PDF shouldn't make.
+ */
+const CV_RELEASE =
+  'https://github.com/danielvanginneken/danielvanginneken/releases/latest/download';
+export const CV = {
+  en: `${CV_RELEASE}/CV-DanielvanGinneken-EN.pdf`,
+  nl: `${CV_RELEASE}/CV-DanielvanGinneken-NL.pdf`,
+} as const;
+
+/** CV for a page's `Astro.currentLocale`; English for anything without a CV. */
+export const cvFor = (locale: string | undefined): string =>
+  locale === 'nl' ? CV.nl : CV.en;
+
 /** Everything with a non-empty value, for JSON-LD `sameAs`. */
 export const SAME_AS: string[] = Object.values(SOCIALS).filter(Boolean);
 

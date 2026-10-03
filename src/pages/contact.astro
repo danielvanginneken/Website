@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import PageHeader from '../components/PageHeader.astro';
-import { EMAIL, SOCIALS } from '../consts';
+import { cvFor, EMAIL, SOCIALS } from '../consts';
 
 // Reframed from the previous "looking for an internship" wording, which no
 // longer holds — that search is over.
@@ -32,6 +32,15 @@ const channels = [
     href: SOCIALS.github,
     note: 'The code behind the projects, including this site.',
     external: true,
+  },
+  {
+    label: 'CV',
+    value: 'Download PDF',
+    // Follows the page language: /contact → EN, a future /nl/contact → NL.
+    href: cvFor(Astro.currentLocale),
+    note: 'The latest version, always one page.',
+    // A download, not a page: same tab, so no empty tab flashes open.
+    external: false,
   },
 ];
 ---
